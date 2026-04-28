@@ -1,0 +1,56 @@
+body {
+  font-family: var(--font-body);
+  background-color: var(--cream);
+  color: var(--text-dark);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+#smooth-content {
+  overflow: visible;
+  width: 100%;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  line-height: 1.05;
+}
+
+p {
+  font-size: var(--fs-body);
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+.section {
+  padding: var(--spacing-xl) var(--spacing-md);
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.reveal-text {
+  overflow: hidden;
+}
+
+::selection {
+  background-color: var(--red);
+  color: var(--white);
+}
+
+/* Utility: color block sections */
+.bg-red { background-color: var(--red); color: var(--text-on-red); }
+.bg-cream { background-color: var(--cream); }
+.bg-gold { background-color: var(--gold); }
+.bg-yellow { background-color: var(--yellow-bg); }

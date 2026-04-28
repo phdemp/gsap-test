@@ -1,0 +1,44 @@
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  pointer-events: none;
+}
+
+.cursor__dot {
+  width: 8px;
+  height: 8px;
+  background-color: var(--red);
+  border-radius: 50%;
+  position: absolute;
+  top: -4px;
+  left: -4px;
+}
+
+.cursor__ring {
+  width: 44px;
+  height: 44px;
+  border: 1.5px solid var(--red);
+  border-radius: 50%;
+  position: absolute;
+  top: -22px;
+  left: -22px;
+  opacity: 0.4;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.cursor.hovering .cursor__ring {
+  transform: scale(1.6);
+  opacity: 0.2;
+}
+
+.cursor.hovering .cursor__dot {
+  transform: scale(1.5);
+}
+
+@media (hover: none) {
+  .cursor {
+    display: none;
+  }
+}

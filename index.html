@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SAVEUR — Culinary Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Loader -->
+  <div class="loader">
+    <div class="loader__brand">SAVEUR</div>
+    <div class="loader__counter">0</div>
+    <div class="loader__bar">
+      <div class="loader__bar-fill"></div>
+    </div>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor">
+    <div class="cursor__dot"></div>
+    <div class="cursor__ring"></div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <a href="#food-spread">Menu</a>
+    <a href="#projects">Projects</a>
+    <a href="#about">Our Story</a>
+    <a href="#">Shop</a>
+    <a href="#">Contact</a>
+  </div>
+
+  <!-- Header -->
+  <header class="header on-red">
+    <a href="/" class="header__logo">SAVEUR</a>
+    <nav class="header__nav">
+      <a href="#food-spread" class="header__nav-link">Menu</a>
+      <a href="#projects" class="header__nav-link">Projects</a>
+      <a href="#about" class="header__nav-link">Our Story</a>
+      <a href="#" class="header__nav-link">Shop</a>
+      <a href="#" class="header__nav-link">Contact</a>
+      <a href="#" class="header__nav-link">Instagram</a>
+    </nav>
+    <button class="header__hamburger" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <!-- Smooth Scroll Wrapper -->
+  <div id="smooth-wrapper">
+    <div id="smooth-content">
+
+      <!-- Hero — Bold red with floating food images -->
+      <section class="hero">
+        <div class="hero__float-img hero__float-img--1">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=400&h=500&fit=crop" alt="Fine dining" />
+        </div>
+        <div class="hero__float-img hero__float-img--2">
+          <img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=400&h=400&fit=crop" alt="Plated dish" />
+        </div>
+        <div class="hero__float-img hero__float-img--3">
+          <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&h=300&fit=crop" alt="Pizza" />
+        </div>
+        <div class="hero__float-img hero__float-img--4">
+          <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=400&h=500&fit=crop" alt="Pancakes" />
+        </div>
+
+        <h1 class="hero__brand">SAVEUR</h1>
+        <p class="hero__tagline">Culinary Art & Visual Storytelling</p>
+        <span class="hero__scroll-hint">Scroll to explore</span>
+      </section>
+
+      <!-- Food Spread — Large hero image -->
+      <section class="food-spread" id="food-spread">
+        <div class="food-spread__inner">
+          <span class="food-spread__label">Featured</span>
+          <h2 class="food-spread__title reveal-text">The Art of Plating</h2>
+          <div class="food-spread__hero-img">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1400&h=800&fit=crop" alt="Food spread" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Marquee Strip -->
+      <div class="product-strip">
+        <div class="product-strip__track">
+          <span class="product-strip__item">Fine Dining</span>
+          <span class="product-strip__dot"></span>
+          <span class="product-strip__item">Patisserie</span>
+          <span class="product-strip__dot"></span>
+          <span class="product-strip__item">Brunch</span>
+          <span class="product-strip__dot"></span>
+          <span class="product-strip__item">Grillhouse</span>
+          <span class="product-strip__dot"></span>
+          <span class="product-strip__item">Pizzeria</span>
+          <span class="product-strip__dot"></span>
+          <span class="product-strip__item">Healthy</span>
+          <span class="product-strip__dot"></span>
+          <span class="product-strip__item">Fine Dining</span>
+          <span class="product-strip__dot"></span>
+          <span class="product-strip__item">Patisserie</span>
+          <span class="product-strip__dot"></span>
+          <span class="product-strip__item">Brunch</span>
+          <span class="product-strip__dot"></span>
+          <span class="product-strip__item">Grillhouse</span>
+          <span class="product-strip__dot"></span>
+        </div>
+      </div>
+
+      <!-- Projects Grid -->
+      <section class="projects section" id="projects">
+        <div class="projects__inner">
+          <div class="projects__grid">
+
+            <article class="project-card">
+              <div class="project-card__image-wrapper">
+                <img class="project-card__image" src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&h=600&fit=crop" alt="Fine dining" />
+              </div>
+              <div class="project-card__info">
+                <h3 class="project-card__name">L'Atelier Blanc</h3>
+                <div class="project-card__meta">
+                  <span class="project-card__location">Lyon</span>
+                  <span class="project-card__category">Fine Dining</span>
+                  <span class="project-card__year">2024</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__image-wrapper">
+                <img class="project-card__image" src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&h=600&fit=crop" alt="Restaurant interior" />
+              </div>
+              <div class="project-card__info">
+                <h3 class="project-card__name">Maison Dorée</h3>
+                <div class="project-card__meta">
+                  <span class="project-card__location">Bordeaux</span>
+                  <span class="project-card__category">Interior</span>
+                  <span class="project-card__year">2024</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__image-wrapper">
+                <img class="project-card__image" src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=800&h=600&fit=crop" alt="Plated dish" />
+              </div>
+              <div class="project-card__info">
+                <h3 class="project-card__name">Assiette Noire</h3>
+                <div class="project-card__meta">
+                  <span class="project-card__location">Nice</span>
+                  <span class="project-card__category">Plating</span>
+                  <span class="project-card__year">2023</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__image-wrapper">
+                <img class="project-card__image" src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800&h=600&fit=crop" alt="Grilled food" />
+              </div>
+              <div class="project-card__info">
+                <h3 class="project-card__name">Feu & Flamme</h3>
+                <div class="project-card__meta">
+                  <span class="project-card__location">Marseille</span>
+                  <span class="project-card__category">Grill</span>
+                  <span class="project-card__year">2023</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__image-wrapper">
+                <img class="project-card__image" src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&h=600&fit=crop" alt="Pizza" />
+              </div>
+              <div class="project-card__info">
+                <h3 class="project-card__name">Forno Antico</h3>
+                <div class="project-card__meta">
+                  <span class="project-card__location">Toulouse</span>
+                  <span class="project-card__category">Pizzeria</span>
+                  <span class="project-card__year">2023</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__image-wrapper">
+                <img class="project-card__image" src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=800&h=600&fit=crop" alt="Breakfast plate" />
+              </div>
+              <div class="project-card__info">
+                <h3 class="project-card__name">Le Matin Calme</h3>
+                <div class="project-card__meta">
+                  <span class="project-card__location">Strasbourg</span>
+                  <span class="project-card__category">Brunch</span>
+                  <span class="project-card__year">2023</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__image-wrapper">
+                <img class="project-card__image" src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&h=600&fit=crop" alt="Steak" />
+              </div>
+              <div class="project-card__info">
+                <h3 class="project-card__name">Boucherie Moderne</h3>
+                <div class="project-card__meta">
+                  <span class="project-card__location">Paris 11</span>
+                  <span class="project-card__category">Steakhouse</span>
+                  <span class="project-card__year">2022</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__image-wrapper">
+                <img class="project-card__image" src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=800&h=600&fit=crop" alt="Pancakes" />
+              </div>
+              <div class="project-card__info">
+                <h3 class="project-card__name">Douceur Sucrée</h3>
+                <div class="project-card__meta">
+                  <span class="project-card__location">Nantes</span>
+                  <span class="project-card__category">Patisserie</span>
+                  <span class="project-card__year">2022</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__image-wrapper">
+                <img class="project-card__image" src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=800&h=600&fit=crop" alt="Salad bowl" />
+              </div>
+              <div class="project-card__info">
+                <h3 class="project-card__name">Verdure Fraîche</h3>
+                <div class="project-card__meta">
+                  <span class="project-card__location">Lille</span>
+                  <span class="project-card__category">Healthy</span>
+                  <span class="project-card__year">2022</span>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Tagline -->
+      <section class="tagline">
+        <h2 class="tagline__text reveal-text">Where culinary art meets visual storytelling</h2>
+      </section>
+
+      <!-- About -->
+      <section class="about section" id="about">
+        <div class="about__inner">
+          <div class="about__image">
+            <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=600&h=700&fit=crop" alt="Chef at work" />
+          </div>
+          <div class="about__content">
+            <span class="about__label">Our Story</span>
+            <h2 class="about__title reveal-text">A New Tradition Since 2019</h2>
+            <p class="about__desc">We craft visual narratives for the world's most ambitious restaurants and food brands. Every plate tells a story — we make sure the world sees it.</p>
+            <p class="about__desc">From Michelin-starred kitchens to neighborhood bistros, our lens captures the passion, craft, and soul behind every dish.</p>
+            <a href="#" class="about__cta">Discover More</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer__inner">
+          <span class="footer__brand">SAVEUR</span>
+          <div class="footer__links">
+            <a href="#projects" class="footer__link">Projects</a>
+            <a href="#about" class="footer__link">About</a>
+            <a href="#" class="footer__link">Instagram</a>
+            <a href="#" class="footer__link">Contact</a>
+          </div>
+          <span class="footer__credit">&copy; 2024 Saveur Studio</span>
+        </div>
+      </footer>
+
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

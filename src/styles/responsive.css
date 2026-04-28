@@ -1,0 +1,108 @@
+@media (max-width: 1024px) {
+  .projects__grid {
+    gap: var(--spacing-sm);
+  }
+
+  .project-card__info {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .about__inner {
+    gap: var(--spacing-md);
+  }
+}
+
+@media (max-width: 768px) {
+  .header__nav {
+    display: none;
+  }
+
+  .header__hamburger {
+    display: flex;
+  }
+
+  .hero {
+    min-height: 80vh;
+    padding: var(--spacing-lg) var(--spacing-sm);
+  }
+
+  .hero__float-img--1,
+  .hero__float-img--4 {
+    display: none;
+  }
+
+  .hero__float-img--2 {
+    width: 100px;
+    height: 100px;
+    top: 10%;
+    right: 4%;
+  }
+
+  .hero__float-img--3 {
+    width: 120px;
+    height: 90px;
+    bottom: 20%;
+    left: 4%;
+  }
+
+  .projects__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card:nth-child(1),
+  .project-card:nth-child(6) {
+    grid-column: span 1;
+  }
+
+  .project-card__image-wrapper,
+  .project-card:nth-child(1) .project-card__image-wrapper,
+  .project-card:nth-child(6) .project-card__image-wrapper {
+    aspect-ratio: 4/3;
+  }
+
+  .about__inner {
+    grid-template-columns: 1fr;
+  }
+
+  .about__image {
+    transform: rotate(-1deg);
+  }
+
+  .about__image img {
+    height: 300px;
+  }
+
+  .tagline__text {
+    font-size: clamp(2rem, 7vw, 3.5rem);
+  }
+
+  .food-spread__hero-img img {
+    height: 35vh;
+  }
+
+  .footer__inner {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    text-align: center;
+  }
+
+  .section {
+    padding: var(--spacing-lg) var(--spacing-sm);
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --header-height: 60px;
+  }
+
+  .hero {
+    min-height: 70vh;
+  }
+
+  .project-card__meta {
+    flex-direction: column;
+    gap: 0.125rem;
+  }
+}

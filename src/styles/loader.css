@@ -1,0 +1,52 @@
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--red);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.loader__brand {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-weight: 700;
+  color: var(--cream);
+  overflow: hidden;
+}
+
+.loader__brand .char {
+  display: inline-block;
+}
+
+.loader__counter {
+  margin-top: var(--spacing-md);
+  font-size: var(--fs-small);
+  color: rgba(251, 245, 231, 0.5);
+  letter-spacing: 0.3em;
+  font-variant-numeric: tabular-nums;
+}
+
+.loader__bar {
+  position: absolute;
+  bottom: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 2px;
+  background-color: rgba(251, 245, 231, 0.15);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.loader__bar-fill {
+  width: 0%;
+  height: 100%;
+  background-color: var(--gold);
+  border-radius: 2px;
+}

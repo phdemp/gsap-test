@@ -1,0 +1,134 @@
+- generic [active] [ref=e20]:
+  - generic [ref=e23]:
+    - img [ref=e26]
+    - text: Inicio Productos Nuestra Historia Contactico
+    - generic [ref=e71] [cursor=pointer]:
+      - button "Menu" [ref=e72]
+      - link "Homepage" [ref=e75]:
+        - /url: /
+        - img [ref=e77]
+    - main [ref=e122]:
+      - generic [ref=e128]:
+        - img "image" [ref=e131]
+        - img "thumbnail-image" [ref=e134]
+      - generic [ref=e135]:
+        - img
+        - heading "LA IMPORTANCIA DEL PIMIENTO" [level=3] [ref=e136]
+      - generic [ref=e138]:
+        - link "image":
+          - /url: /products/
+          - img "image" [ref=e142]
+        - link "image" [ref=e143]:
+          - /url: /products/
+          - img "image" [ref=e147]
+        - link "image":
+          - /url: /products/
+          - img "image" [ref=e151]
+      - heading [level=3] [ref=e152]
+      - generic [ref=e157]:
+        - img
+      - generic [ref=e158]:
+        - link "Ven a probar" [ref=e159] [cursor=pointer]:
+          - /url: /ven-a-probar/
+          - generic [ref=e161]: Ven a probar
+        - link "Puntos de venta" [ref=e162] [cursor=pointer]:
+          - /url: /puntos-de-venta/
+          - generic [ref=e164]: Puntos de venta
+      - generic [ref=e166]:
+        - img [ref=e168]
+        - img "image" [ref=e199]
+      - generic [ref=e200]:
+        - generic [ref=e201]:
+          - text: FRASCO Lata
+          - generic [ref=e202]: LA NUEVA
+          - img
+          - generic [ref=e203]: TRADICIÓN
+          - text: Bolsa Pandereta
+        - link "currentProduct product" [ref=e205]:
+          - /url: /products/frasco-carne/
+          - img "currentProduct" [ref=e207]
+          - img "product" [ref=e209]
+        - generic [ref=e210]:
+          - button "Salmon Salmon" [ref=e211] [cursor=pointer]:
+            - generic [ref=e213]: Salmon Salmon
+          - button "Atun Atun" [ref=e214] [cursor=pointer]:
+            - generic [ref=e216]: Atun Atun
+          - button "Quinoa Quinoa" [ref=e217] [cursor=pointer]:
+            - generic [ref=e219]: Quinoa Quinoa
+          - button "Carne Carne" [ref=e220] [cursor=pointer]:
+            - generic [ref=e222]: Carne Carne
+      - img "image" [ref=e227]
+      - generic [ref=e229]:
+        - generic [ref=e230]:
+          - link "Instagram Instagram" [ref=e231] [cursor=pointer]:
+            - /url: https://www.instagram.com/don.molinico
+            - generic [ref=e233]: Instagram Instagram
+          - link "YouTube YouTube" [ref=e234] [cursor=pointer]:
+            - /url: https://www.youtube.com/@DonMolinico
+            - generic [ref=e236]: YouTube YouTube
+          - link "Facebook Facebook" [ref=e237] [cursor=pointer]:
+            - /url: https://www.facebook.com/profile.php?id=61557703560558&locale=es_ES
+            - generic [ref=e239]: Facebook Facebook
+        - link [ref=e243] [cursor=pointer]:
+          - /url: /
+          - img [ref=e244]
+        - generic [ref=e250]:
+          - generic [ref=e252]:
+            - link "Productos Productos" [ref=e253] [cursor=pointer]:
+              - /url: /products/
+              - generic [ref=e255]: Productos Productos
+            - link "Historia Historia" [ref=e256] [cursor=pointer]:
+              - /url: /about/
+              - generic [ref=e258]: Historia Historia
+            - link "Contactico Contactico" [ref=e259] [cursor=pointer]:
+              - /url: /contact/
+              - generic [ref=e261]: Contactico Contactico
+            - link "Inicio Inicio" [ref=e262] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e264]: Inicio Inicio
+          - generic [ref=e265]:
+            - link "Política Privacidad Política Privacidad" [ref=e266] [cursor=pointer]:
+              - /url: /politica-privacidad/
+              - generic [ref=e268]: Política Privacidad Política Privacidad
+            - link "Política Cookies Política Cookies" [ref=e269] [cursor=pointer]:
+              - /url: /politica-cookies/
+              - generic [ref=e271]: Política Cookies Política Cookies
+            - link "Aviso Legal Aviso Legal" [ref=e272] [cursor=pointer]:
+              - /url: /aviso-legal/
+              - generic [ref=e274]: Aviso Legal Aviso Legal
+            - link "Derechos Arsol Derechos Arsol" [ref=e275] [cursor=pointer]:
+              - /url: ./arsol.html
+              - generic [ref=e277]: Derechos Arsol Derechos Arsol
+          - generic [ref=e278]:
+            - generic [ref=e279]: Esta empresa ha recibido una ayuda cofinanciada al 31 % por el Fondo Europeo Agrícola de Desarrollo Rural a través del PDR de Navarra 2014-2020
+            - generic [ref=e280]: "Proyecto cofinanciado por:"
+            - generic [ref=e281]:
+              - generic [ref=e282]:
+                - img "image" [ref=e286]
+                - generic [ref=e287]: "FONDO EUROPEO AGRÍCOLA DE DESARROLLO RURAL: EUROPA INVIERTE EN ZONAS RURALES"
+              - generic [ref=e288]:
+                - img "image" [ref=e292]
+                - generic [ref=e293]: DEPARTAMENTO DE DESARROLLO ECONÓMICO
+          - generic [ref=e294]: © copyright 2026 grupo Viru S.A. Todos los derechos reservados.
+  - alertdialog "Nota informativa" [ref=e3]:
+    - generic [ref=e5]:
+      - document [ref=e6]:
+        - generic [ref=e7]:
+          - paragraph [ref=e8]:
+            - text: Nosotros (donmolinico.es) y terceros seleccionados (3) recogemos información personal según se especifica en la
+            - link "política de privacidad - el enlace se abre en una pestaña nueva" [ref=e9] [cursor=pointer]:
+              - /url: https://donmolinico.es/politica-cookies/
+              - text: política de privacidad
+            - text: y utilizamos cookies o tecnologías similares con fines técnicos y, con su consentimiento, para las finalidades de
+            - strong [ref=e10]: medición y “marketing (anuncios personalizados)”
+            - text: según se especifica en la
+            - button "política de cookies - el enlace se abre en una pestaña nueva" [ref=e11] [cursor=pointer]: política de cookies
+            - text: .
+          - paragraph [ref=e12]: Usted es libre de otorgar, denegar o revocar su consentimiento en cualquier momento accediendo al panel de preferencias. Denegar el consentimiento puede provocar que las características relacionadas no estén disponibles.
+          - paragraph
+          - paragraph [ref=e13]: Utilice el botón “Aceptar” para dar su consentimiento. Utilice el botón “Rechazar” para continuar sin aceptar.
+      - generic [ref=e14]:
+        - button "Saber más y personalizar" [ref=e16] [cursor=pointer]
+        - generic [ref=e17]:
+          - button "Rechazar" [ref=e18] [cursor=pointer]
+          - button "Aceptar" [ref=e19] [cursor=pointer]

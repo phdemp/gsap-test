@@ -1,0 +1,40 @@
+- generic [active] [ref=e1]:
+  - navigation:
+    - link [ref=e22] [cursor=pointer]:
+      - /url: /
+      - img [ref=e24]
+    - generic [ref=e33]:
+      - link "projets" [ref=e34] [cursor=pointer]:
+        - /url: /projets
+      - link "agence" [ref=e35] [cursor=pointer]:
+        - /url: /agence
+      - link "process" [ref=e36] [cursor=pointer]:
+        - /url: /process
+      - link "shop" [ref=e37] [cursor=pointer]:
+        - /url: /shop
+      - link "contact" [ref=e38] [cursor=pointer]:
+        - /url: /contact
+      - link "instagram" [ref=e39] [cursor=pointer]:
+        - /url: https://www.instagram.com/mersi.architecture/
+  - generic [ref=e41]:
+    - generic [ref=e42]:
+      - link "projets" [ref=e43] [cursor=pointer]:
+        - /url: /projets
+      - link "agence" [ref=e44] [cursor=pointer]:
+        - /url: /agence
+      - link "process" [ref=e45] [cursor=pointer]:
+        - /url: /process
+      - link "shop" [ref=e46] [cursor=pointer]:
+        - /url: /shop
+      - link "contact" [ref=e47] [cursor=pointer]:
+        - /url: /contact
+      - link "instagram" [ref=e48] [cursor=pointer]:
+        - /url: https://www.instagram.com/mersi.architecture/
+    - generic [ref=e50]:
+      - generic [ref=e51]
+      - img [ref=e55]
+      - link "Website by FLOT NOIR" [ref=e58] [cursor=pointer]:
+        - /url: https://www.linkedin.com/in/clementmerouani/
+  - main [ref=e61]:
+    - generic [ref=e62]:
+      - generic

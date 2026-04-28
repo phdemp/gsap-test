@@ -1,0 +1,140 @@
+- generic [active] [ref=e1]:
+  - navigation:
+    - link [ref=e22] [cursor=pointer]:
+      - /url: /
+      - img [ref=e24]
+    - generic [ref=e33]:
+      - link "projets" [ref=e34] [cursor=pointer]:
+        - /url: /projets
+      - link "agence" [ref=e35] [cursor=pointer]:
+        - /url: /agence
+      - link "process" [ref=e36] [cursor=pointer]:
+        - /url: /process
+      - link "shop" [ref=e37] [cursor=pointer]:
+        - /url: /shop
+      - link "contact" [ref=e38] [cursor=pointer]:
+        - /url: /contact
+      - link "instagram" [ref=e39] [cursor=pointer]:
+        - /url: https://www.instagram.com/mersi.architecture/
+  - generic [ref=e41]:
+    - generic [ref=e42]:
+      - link "projets" [ref=e43] [cursor=pointer]:
+        - /url: /projets
+      - link "agence" [ref=e44] [cursor=pointer]:
+        - /url: /agence
+      - link "process" [ref=e45] [cursor=pointer]:
+        - /url: /process
+      - link "shop" [ref=e46] [cursor=pointer]:
+        - /url: /shop
+      - link "contact" [ref=e47] [cursor=pointer]:
+        - /url: /contact
+      - link "instagram" [ref=e48] [cursor=pointer]:
+        - /url: https://www.instagram.com/mersi.architecture/
+    - generic [ref=e50]:
+      - generic [ref=e51]:
+        - link "news" [ref=e52] [cursor=pointer]:
+          - /url: /news
+        - link "Mentions légales" [ref=e53] [cursor=pointer]:
+          - /url: /mentions-legales
+      - img [ref=e55]
+      - link "Website by FLOT NOIR" [ref=e58] [cursor=pointer]:
+        - /url: https://www.linkedin.com/in/clementmerouani/
+        - generic [ref=e59]: Website by FLOT NOIR
+  - main [ref=e61]:
+    - generic [ref=e62]:
+      - generic:
+        - generic:
+          - list:
+            - listitem
+            - listitem
+            - listitem
+            - listitem
+            - listitem
+            - listitem
+            - listitem
+            - listitem
+            - listitem
+        - generic:
+          - list:
+            - listitem
+            - listitem
+            - listitem
+            - listitem
+            - listitem
+            - listitem
+            - listitem
+            - listitem
+            - listitem
+        - list [ref=e65]:
+          - listitem [ref=e66]:
+            - link "Naya Levallois Résidentiel" [ref=e67] [cursor=pointer]:
+              - /url: /projets/naya
+              - generic [ref=e68]:
+                - heading "Naya" [level=2] [ref=e70]
+                - generic [ref=e71]: Levallois
+                - img [ref=e73]
+                - generic [ref=e82]: Résidentiel
+          - listitem [ref=e83]:
+            - link "Maurice Cafe St-Honore Paris 8 Hospitality" [ref=e84] [cursor=pointer]:
+              - /url: /projets/cafe-maurice-saint-honore
+              - generic [ref=e85]:
+                - heading "Maurice Cafe St-Honore" [level=2] [ref=e87]
+                - generic [ref=e88]: Paris 8
+                - img [ref=e90]
+                - generic [ref=e99]: Hospitality
+          - listitem [ref=e100]:
+            - link "Berri Paris 8 Résidentiel" [ref=e101] [cursor=pointer]:
+              - /url: /projets/berri
+              - generic [ref=e102]:
+                - heading "Berri" [level=2] [ref=e104]
+                - generic [ref=e105]: Paris 8
+                - img [ref=e107]
+                - generic [ref=e116]: Résidentiel
+          - listitem [ref=e117]:
+            - link "Cook Paris 17 Hospitality" [ref=e118] [cursor=pointer]:
+              - /url: /projets/cook
+              - generic [ref=e119]:
+                - heading "Cook" [level=2] [ref=e121]
+                - generic [ref=e122]: Paris 17
+                - img [ref=e124]
+                - generic [ref=e133]: Hospitality
+          - listitem [ref=e134]:
+            - link "Segur Paris 7 Résidentiel" [ref=e135] [cursor=pointer]:
+              - /url: /projets/segur
+              - generic [ref=e136]:
+                - heading "Segur" [level=2] [ref=e138]
+                - generic [ref=e139]: Paris 7
+                - img [ref=e141]
+                - generic [ref=e150]: Résidentiel
+          - listitem [ref=e151]:
+            - link "Tonnenami Paris 6 Résidentiel" [ref=e152] [cursor=pointer]:
+              - /url: /projets/tonnemani
+              - generic [ref=e153]:
+                - heading "Tonnenami" [level=2] [ref=e155]
+                - generic [ref=e156]: Paris 6
+                - img [ref=e158]
+                - generic [ref=e167]: Résidentiel
+          - listitem [ref=e168]:
+            - link "Aurelien Cohen Levallois Retail" [ref=e169] [cursor=pointer]:
+              - /url: /projets/aurelien-cohen-levallois
+              - generic [ref=e170]:
+                - heading "Aurelien Cohen" [level=2] [ref=e172]
+                - generic [ref=e173]: Levallois
+                - img [ref=e175]
+                - generic [ref=e184]: Retail
+          - listitem [ref=e185]:
+            - link "Atokym Paris 15 Résidentiel" [ref=e186] [cursor=pointer]:
+              - /url: /projets/atokym
+              - generic [ref=e187]:
+                - heading "Atokym" [level=2] [ref=e189]
+                - generic [ref=e190]: Paris 15
+                - img [ref=e192]
+                - generic [ref=e201]: Résidentiel
+          - listitem [ref=e202]:
+            - link "Paix Paris 1 Résidentiel" [ref=e203] [cursor=pointer]:
+              - /url: /projets/paix
+              - generic [ref=e204]:
+                - heading "Paix" [level=2] [ref=e206]
+                - generic [ref=e207]: Paris 1
+                - img [ref=e209]
+                - generic [ref=e218]: Résidentiel

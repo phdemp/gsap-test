@@ -1,0 +1,42 @@
+:root {
+  --red: #D70321;
+  --red-dark: #B5021B;
+  --gold: #CBA058;
+  --gold-light: #E8C97A;
+  --cream: #FBF5E7;
+  --cream-dark: #F0E6D0;
+  --yellow: #F2A900;
+  --yellow-bg: #F5B731;
+  --green: #2D6A4F;
+  --green-light: #52B788;
+  --white: #FFFFFF;
+  --black: #1A1A1A;
+  --text-dark: #1A1A1A;
+  --text-muted: #6B6560;
+  --text-on-red: #FBF5E7;
+
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+
+  --fs-hero: clamp(4rem, 12vw, 10rem);
+  --fs-display: clamp(3rem, 8vw, 7rem);
+  --fs-h1: clamp(2.5rem, 5vw, 4.5rem);
+  --fs-h2: clamp(1.8rem, 3.5vw, 3rem);
+  --fs-h3: clamp(1.2rem, 2vw, 1.8rem);
+  --fs-body: clamp(0.95rem, 1.2vw, 1.1rem);
+  --fs-small: clamp(0.75rem, 0.9vw, 0.875rem);
+  --fs-nav: 0.8rem;
+
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --spacing-xl: 8rem;
+  --spacing-2xl: 12rem;
+
+  --header-height: 80px;
+  --transition-smooth: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+}

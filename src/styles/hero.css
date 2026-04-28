@@ -1,0 +1,97 @@
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--red);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: var(--spacing-xl) var(--spacing-md);
+}
+
+.hero__brand {
+  font-family: var(--font-display);
+  font-size: var(--fs-hero);
+  font-weight: 700;
+  color: var(--cream);
+  text-align: center;
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  position: relative;
+  z-index: 2;
+}
+
+.hero__tagline {
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  color: rgba(251, 245, 231, 0.7);
+  text-align: center;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-top: var(--spacing-sm);
+  position: relative;
+  z-index: 2;
+}
+
+.hero__scroll-hint {
+  position: absolute;
+  bottom: var(--spacing-md);
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: var(--fs-small);
+  color: rgba(251, 245, 231, 0.5);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+/* Decorative food images floating around hero */
+.hero__float-img {
+  position: absolute;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  will-change: transform;
+}
+
+.hero__float-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero__float-img--1 {
+  width: clamp(140px, 18vw, 260px);
+  height: clamp(180px, 22vw, 320px);
+  top: 12%;
+  left: 5%;
+  transform: rotate(-8deg);
+}
+
+.hero__float-img--2 {
+  width: clamp(120px, 15vw, 220px);
+  height: clamp(120px, 15vw, 220px);
+  top: 8%;
+  right: 6%;
+  transform: rotate(6deg);
+  border-radius: 50%;
+}
+
+.hero__float-img--3 {
+  width: clamp(160px, 20vw, 280px);
+  height: clamp(110px, 14vw, 200px);
+  bottom: 15%;
+  left: 8%;
+  transform: rotate(4deg);
+}
+
+.hero__float-img--4 {
+  width: clamp(130px, 16vw, 240px);
+  height: clamp(170px, 20vw, 300px);
+  bottom: 10%;
+  right: 5%;
+  transform: rotate(-5deg);
+}

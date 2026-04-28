@@ -1,0 +1,13 @@
+node_modules/
+dist/
+build/
+.env
+.env.local
+.DS_Store
+.vscode/
+.idea/
+Thumbs.db
+.claude/
+.playwright-mcp/
+*.log
+npm-debug.log*
