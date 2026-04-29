@@ -1,4 +1,8 @@
 import { gsap, ScrollTrigger, SplitText } from '../utils/register-plugins.js';
+import { Application } from '@splinetool/runtime';
+
+// ← SWAP THIS URL to your food scene from Spline community
+const SPLINE_SCENE_URL = 'https://prod.spline.design/U7NpjSjPmO6PuZVW/scene.splinecode';
 
 export function initHero() {
   const hero = document.querySelector('.hero');
@@ -88,4 +92,64 @@ export function initHero() {
       scrub: true,
     },
   });
+
+  // Init Spline 3D scene
+  const canvas = document.getElementById('spline-canvas');
+  if (canvas) {
+    const splineLoader = document.querySelector('.hero__spline-loader');
+    const app = new Application(canvas);
+
+    app.load(SPLINE_SCENE_URL).then(() => {
+      // Hide loader
+      if (splineLoader) {
+        gsap.to(splineLoader, {
+          opacity: 0,
+          duration: 0.3,
+          onComplete: () => splineLoader.style.display = 'none',
+        });
+      }
+
+      // Force transparent background — Spline resets clear alpha every frame,
+      // so we monkey-patch setClearColor to always force alpha=0
+      const renderer = app._renderer;
+      if (renderer) {
+        const origSetClearColor = renderer.setClearColor.bind(renderer);
+        renderer.setClearColor = function (color, _alpha) {
+          origSetClearColor(color, 0);
+        };
+        renderer.setClearAlpha(0);
+      }
+
+      // Make the burger bigger via Spline zoom
+      app.setZoom(1.3);
+
+      // Scroll-driven burger explode: spread ingredients apart on scroll
+      const ingredientNames = ['BUN TOP', 'TOMATTOS', 'CHEESE', 'BURGER', 'SALAD 2', 'BOTTOM BUN'];
+      const ingredients = ingredientNames.map(name => {
+        const obj = app.findObjectByName(name);
+        return obj ? { obj, originalY: obj.position.y } : null;
+      }).filter(Boolean);
+
+      if (ingredients.length) {
+        const centerY = ingredients.reduce((sum, i) => sum + i.originalY, 0) / ingredients.length;
+
+        ScrollTrigger.create({
+          trigger: hero,
+          start: 'top top',
+          end: 'bottom top',
+          scrub: 1,
+          onUpdate: (self) => {
+            const spread = self.progress * 4;
+            ingredients.forEach(item => {
+              const offset = item.originalY - centerY;
+              item.obj.position.y = item.originalY + offset * spread;
+            });
+          },
+        });
+      }
+    }).catch(err => {
+      console.warn('Spline failed to load:', err);
+      if (splineLoader) splineLoader.textContent = '3D scene unavailable';
+    });
+  }
 }

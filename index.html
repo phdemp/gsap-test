@@ -56,23 +56,25 @@
   <div id="smooth-wrapper">
     <div id="smooth-content">
 
-      <!-- Hero — Bold red with floating food images -->
+      <!-- Hero — Bold red with centered 3D burger -->
       <section class="hero">
         <div class="hero__float-img hero__float-img--1">
           <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=400&h=500&fit=crop" alt="Fine dining" />
-        </div>
-        <div class="hero__float-img hero__float-img--2">
-          <img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=400&h=400&fit=crop" alt="Plated dish" />
-        </div>
-        <div class="hero__float-img hero__float-img--3">
-          <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&h=300&fit=crop" alt="Pizza" />
         </div>
         <div class="hero__float-img hero__float-img--4">
           <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=400&h=500&fit=crop" alt="Pancakes" />
         </div>
 
-        <h1 class="hero__brand">SAVEUR</h1>
-        <p class="hero__tagline">Culinary Art & Visual Storytelling</p>
+        <div class="hero__text">
+          <h1 class="hero__brand">SAVEUR</h1>
+          <p class="hero__tagline">Culinary Art & Visual Storytelling</p>
+        </div>
+
+        <div class="hero__spline-wrap">
+          <canvas id="spline-canvas"></canvas>
+          <div class="hero__spline-loader"><span class="loader-dot"></span></div>
+        </div>
+
         <span class="hero__scroll-hint">Scroll to explore</span>
       </section>
 
